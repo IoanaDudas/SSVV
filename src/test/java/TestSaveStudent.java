@@ -1,10 +1,10 @@
 import domain.Student;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import repository.StudentXMLRepository;
 import validation.StudentValidator;
 import validation.Validator;
 
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestSaveStudent {
 
