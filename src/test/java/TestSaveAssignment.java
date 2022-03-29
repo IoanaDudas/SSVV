@@ -6,7 +6,7 @@ import validation.Validator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestSaveAssigment {
+public class TestSaveAssignment {
     @Test
     public void TestSaveAssignment_DataIsValidAndNonexistent_Success() {
         Tema tema = new Tema("5", "tema", 10, 5);
