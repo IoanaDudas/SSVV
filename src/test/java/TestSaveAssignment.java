@@ -62,13 +62,4 @@ public class TestSaveAssignment {
 
         assertNull(temaXMLRepository.save(tema));
     }
-
-    @Test
-    public void TestSaveAssignment_StartineIsGreaterThanDeadline_ReturnsNull() {
-        Tema tema = new Tema("5", "tema", 10, 12);
-        Validator<Tema> temaValidator = new TemaValidator();
-        TemaXMLRepository temaXMLRepository = new TemaXMLRepository(temaValidator, "test_teme.xml");
-
-        assertNull(temaXMLRepository.save(tema));
-    }
 }
