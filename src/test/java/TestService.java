@@ -49,6 +49,15 @@ public class TestService {
     }
 
     @Test
+    public void TestAddAssignmentAddStudent() {
+        assertEquals(service.saveStudent("55", "Andrei", 200), 0);
+        assertEquals(service.saveTema("5", "tema", 10, 8), 0);
+
+        studentXMLRepository.delete("55");
+        temaXMLRepository.delete("5");
+    }
+
+    @Test
     public void TestAddGrade() {
         assertEquals(service.saveNota("1", "2",  9, 8, "yay"), 0);
 
